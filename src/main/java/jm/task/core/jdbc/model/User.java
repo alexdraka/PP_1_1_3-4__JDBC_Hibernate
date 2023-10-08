@@ -28,6 +28,13 @@ public class User {
         this.age = age;
     }
 
+    public User(long id, String name, String lastName, byte age) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
     public Long getId() {
         return id;
     }
@@ -58,5 +65,9 @@ public class User {
 
     public void setAge(Byte age) {
         this.age = age;
+    }
+
+    public String toString() {
+         return "{" + getClass().getName() + " [" + "id: " + id + ", name: \"" + name + "\", lastName: \"" + lastName + "\"]}";
     }
 }
