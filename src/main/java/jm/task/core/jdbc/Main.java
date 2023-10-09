@@ -16,19 +16,24 @@ public class Main {
         userDao.createUsersTable();
         // <----- Работает!
         userDao.saveUser("Petr", "Petrov", (byte) 20);
+
+        System.out.println("User с именем – Petr добавлен в базу данных");
+
         userDao.saveUser("Dmitriy", "Popov", (byte) 30);
+
+        System.out.println("User с именем – Dmitriy добавлен в базу данных");
+
         userDao.saveUser("Ivan", "Kuraev", (byte) 45);
+
+        System.out.println("User с именем – Ivan добавлен в базу данных");
+
         userDao.saveUser("Denis", "Kalugin", (byte) 70);
+
+        System.out.println("User с именем – Denis добавлен в базу данных");
         // <----- Работает!
         userDao.removeUserById(23);
         // <----- Работает!
-        List<User> lu = userDao.getAllUsers();
-        StringJoiner joiner = new StringJoiner(",");
-        for (User user : lu) {
-            joiner.add(user.toString());
-        }
-        String myString = joiner.toString();
-        System.out.println(myString);
+        System.out.println(userDao.getAllUsers().toString());
         // <----- Работает!
         userDao.cleanUsersTable();
         // <----- Работает!
