@@ -1,8 +1,8 @@
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\service\UserService.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\model\User.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\service\UserServiceImpl.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\Main.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\util\Util.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDao.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDaoHibernateImpl.java
-C:\Programming\lessons\PP_1_1_3-4__JDBC_Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDaoJDBCImpl.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\Main.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\service\UserServiceImpl.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\service\UserService.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDaoJDBCImpl.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\model\User.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\util\Util.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDaoHibernateImpl.java
+C:\Programming\lessons\PP_1_1_3-4__Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDao.java

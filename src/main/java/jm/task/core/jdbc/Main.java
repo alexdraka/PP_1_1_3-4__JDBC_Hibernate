@@ -1,12 +1,12 @@
 package jm.task.core.jdbc;
 import jm.task.core.jdbc.dao.UserDao;
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
         // реализуйте алгоритм здесь
-        UserDao userDao = new UserDaoJDBCImpl();
+        UserDao userDao = new UserDaoHibernateImpl();
         // <----- Работает!
         userDao.createUsersTable();
         // <----- Работает!
@@ -15,7 +15,7 @@ public class Main {
         userDao.saveUser("Ivan", "Kuraev", (byte) 45);
         userDao.saveUser("Denis", "Kalugin", (byte) 70);
         // <----- Работает!
-        userDao.removeUserById(23);
+        userDao.removeUserById(2);
         // <----- Работает!
         System.out.println(userDao.getAllUsers().toString());
         // <----- Работает!
