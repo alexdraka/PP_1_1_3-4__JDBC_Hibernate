@@ -22,11 +22,7 @@ public class Util {
     private static final String DB_USERNAME = "root";
     private static final String DB_PASSWORD = "root";
 
-    private Session session;
-    private Transaction transaction;
-
     private static SessionFactory sessionFactory;
-    private static StandardServiceRegistry registry;
 
     public Connection getConnection() throws SQLException {
 
@@ -49,6 +45,7 @@ public class Util {
                 configuration.setProperties(settings);
 
                 configuration.addAnnotatedClass(User.class);
+                configuration.addAnnotatedClass(User.class);
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
@@ -59,31 +56,5 @@ public class Util {
             }
         }
         return sessionFactory;
-    }
-    public static void shutdown() {
-        if (registry != null) {
-            StandardServiceRegistryBuilder.destroy(registry);
-        }
-    }
-    public  Session getSession() {
-        return session;
-    }
-    public Transaction getTransaction() {
-        return transaction;
-    }
-    public Session openSession() {
-        return getSessionFactory().openSession();
-    }
-    public  Session openTransactionSession() {
-        session = openSession();
-        transaction = session.beginTransaction();
-        return session;
-    }
-    public void closeSession() {
-        session.close();
-    }
-    public void closeTransactionSession() {
-        transaction.commit();
-        closeSession();
     }
 }
